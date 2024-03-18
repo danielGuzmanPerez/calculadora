@@ -4,7 +4,7 @@ on:
     push:
         branches:
             - main
-            
+
 jobs: 
     hello_wold:
         runs-on: ubuntu-latest
@@ -12,3 +12,6 @@ jobs:
             - name: Echo the message
               run: |
                 echo "Hola" 
+            - name: dime la fecha
+              run: date
+            - run: ls -l
